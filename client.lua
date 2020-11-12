@@ -40,7 +40,7 @@ local function DisplayHelp( _message, x, y, w, h, enableShadow, col1, col2, col3
 end
 
 Citizen.CreateThread( function()
-	WarMenu.CreateMenu('bar', 'Bar')
+	WarMenu.CreateMenu('bar', 'Saloon')
 	repeat
 		if WarMenu.IsMenuOpened('bar') then
 			for i = 1, #booze do
