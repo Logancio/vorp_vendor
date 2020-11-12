@@ -18,7 +18,7 @@ AddEventHandler( 'bar:comprar', function ( args )
     u_money = Character.money
 
     if u_money <= _price then
-        TriggerClientEvent( 'UI:DrawNotification', _src, Config.NoMoney )
+        TriggerClientEvent( 'UI:NotificaCompra', _src, Config.NoMoney )
         return
     end
 
@@ -26,6 +26,6 @@ AddEventHandler( 'bar:comprar', function ( args )
 	
 	VorpInv.addItem(_src, _model, 1)
 
-	TriggerClientEvent( 'UI:DrawNotification', _src, Config.Buytext .. _mens )
+	TriggerClientEvent( 'UI:NotificaCompra', _src, Config.Buytext .. _mens )
     
 end)

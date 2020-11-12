@@ -71,8 +71,8 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('UI:DrawNotification')
-AddEventHandler('UI:DrawNotification', function( _message )
+RegisterNetEvent('UI:NotificaCompra')
+AddEventHandler('UI:NotificaCompra', function( _message )
 	TriggerEvent("vorp:TipRight", _message, 100)
 end)
 
