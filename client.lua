@@ -46,7 +46,7 @@ Citizen.CreateThread( function()
 			for i = 1, #booze do
 				if WarMenu.Button(booze[i]['Text'], booze[i]['SubText'], booze[i]['Desc']) then
 					TriggerServerEvent('bar:comprar', booze[i]['Param'])
-					WarMenu.CloseMenu()
+				--	WarMenu.CloseMenu()
 				end
 			end
 			WarMenu.Display()
